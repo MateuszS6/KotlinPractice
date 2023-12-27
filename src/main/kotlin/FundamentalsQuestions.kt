@@ -30,6 +30,14 @@ fun main() {
     mateusz.showProfile()
     bob.showProfile()
 
+    // Q6
+    val newFoldablePhone = FoldablePhone()
+    newFoldablePhone.switchOn()
+    newFoldablePhone.checkPhoneScreenLight()
+    newFoldablePhone.unfold()
+    newFoldablePhone.switchOn()
+    newFoldablePhone.checkPhoneScreenLight()
+
     
 }
 
