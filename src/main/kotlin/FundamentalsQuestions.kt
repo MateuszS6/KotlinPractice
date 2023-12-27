@@ -23,6 +23,72 @@ fun main() {
     val brunoSong = Song("Venom", "Eminem", 2018, 600_000_000)
     brunoSong.printDescription()
     println(brunoSong.isPopular)
+
+    // Q5
+    val mateusz = Person("Mateusz", 19, "play games", null)
+    val bob = Person("Bob", 69, "lol", mateusz)
+    mateusz.showProfile()
+    bob.showProfile()
+
+    
+}
+
+class Bid(val amount: Int, val bidder: String)
+
+fun auctionPrice(bid: Bid?, minimumPrice: Int): Int {
+    return bid?.amount ?: minimumPrice
+}
+
+open class Phone(var isScreenLightOn: Boolean = false){
+    open fun switchOn() {
+        isScreenLightOn = true
+    }
+
+    fun switchOff() {
+        isScreenLightOn = false
+    }
+
+    fun checkPhoneScreenLight() {
+        val phoneScreenLight = if (isScreenLightOn) "on" else "off"
+        println("The phone screen's light is $phoneScreenLight.")
+    }
+}
+
+class FoldablePhone(var isFolded: Boolean = true): Phone() {
+    override fun switchOn() {
+        if (!isFolded) {
+            isScreenLightOn = true
+        }
+    }
+
+    fun fold() {
+        isFolded = true
+    }
+
+    fun unfold() {
+        isFolded = false
+    }
+}
+
+class Person(val name: String, val age: Int, val hobby: String?, val referrer: Person?) {
+    fun showProfile() {
+        println("Name: $name")
+        println("Age: $age")
+        if(hobby != null) {
+            print("Likes to $hobby. ")
+        }
+        if(referrer != null) {
+            print("Has a referrer named ${referrer.name}")
+            if(referrer.hobby != null) {
+                print(", who likes to ${referrer.hobby}.")
+            } else {
+                print(".")
+            }
+        } else {
+            print("Doesn't have a referrer.")
+        }
+        print("\n\n")
+    }
 }
 
 class Song(
