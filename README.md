@@ -1,6 +1,6 @@
 # Kotlin Practice Exercises
  
-Kotlin practice exercises completed as part of my Android Basics with Compose course.
+Kotlin practice exercises completed as part of my [Android Basics with Compose][course] course.
 
 ## Learning Outcomes
 
@@ -8,3 +8,5 @@ Kotlin practice exercises completed as part of my Android Basics with Compose co
 * Display a text output
 * Used conditionals and function types
 * Used classes and lambda expressions
+
+[course]: https://developer.android.com/courses/android-basics-compose/course
