@@ -2,6 +2,14 @@
 
 This repository contains a series of Kotlin practice exercises that I completed as part of my professional development in the [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) course. The exercises are designed to reinforce the fundamental concepts of Kotlin programming within the context of Android app development.
 
+## Coursework Details
+
+The project is a personal Portfolio Development Option for:
+
+- **Course**: IN2015 Professional Development in IT
+- **Institution**: City, University of London
+- **Term**: Winter 2023
+
 ## Overview
 
 The Kotlin exercises presented here are part of my ongoing efforts to master Android development, focusing specifically on the modern UI toolkit, Jetpack Compose. Each exercise addresses core programming concepts and builds a solid foundation for more advanced Android development tasks.
